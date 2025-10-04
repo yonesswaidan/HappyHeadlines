@@ -4,15 +4,15 @@ namespace HappyHeadlines.Utils
 {
     public static class RandomDataGenerator
     {
-        private static readonly string[] Headlines = new[]
-        {
-            "Breaking News: AI changes everything",
-            "EASV students ace the semester project",
-            "Blazor overtakes React in popularity",
-            "C# 13 adds revolutionary features",
-            "SpaceX lands on Mars",
-            "Developers demand more coffee breaks"
-        };
+private static readonly string[] Headlines = new[]
+{
+    "Katten stjal morgenmaden fra naboen",
+    "Byens café har fået ny barista – kaffen er nu perfekt",
+    "Børnene maler hele skolen i regnbuens farver",
+    "Biblioteket åbner igen efter renovering",
+    "Fodboldklubben vandt den lokale turnering",
+    "Lokal bor finder sjældent mønster i skoven"
+};
 
         private static readonly string[] CommentTexts = new[]
         {
