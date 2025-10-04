@@ -7,16 +7,16 @@ namespace HappyHeadlines
         static async Task Main(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
-            Console.WriteLine("📰 HappyHeadlines Cache Simulation starting...\n");
+            Console.WriteLine("📰 HappyHeadlines Cache Simulationen starter...\n");
 
             var articleCache = new ArticleCache();
             var commentCache = new CommentCache();
             var dashboard = new DashboardService(articleCache, commentCache);
 
-            // preload latest 14 days of articles
+           
             articleCache.PreloadArticles();
 
-            // run for 60 seconds
+        
             var cts = new CancellationTokenSource();
             var simulation = RunSimulation(articleCache, commentCache, cts.Token);
             var dashboardTask = dashboard.StartUpdating(cts.Token);
@@ -25,7 +25,7 @@ namespace HappyHeadlines
             cts.Cancel();
 
             await Task.WhenAll(simulation, dashboardTask);
-            Console.WriteLine("\n✅ Simulation complete. Press any key to exit...");
+            Console.WriteLine("\n Simulationen completed. Press key to exit...");
             Console.ReadKey();
         }
 
