@@ -16,11 +16,16 @@ private static readonly string[] Headlines = new[]
 
         private static readonly string[] CommentTexts = new[]
         {
-            "Great article!",
-            "I totally agree with this.",
-            "This is nonsense!",
-            "Can someone explain this further?",
-            "Nice job!"
+            "Sjov artikel, måtte smile højt!",
+            "Helt enig med det her",
+            "Hmm, det virker lidt underligt",
+            "Kan nogen forklare, hvad der menes?",
+            "Super godt skrevet!",
+            "Det her kunne jeg godt relatere til",
+            "Interessant, havde ikke tænkt på det før",
+            "Haha, det er lige noget for mig",
+            "Tak for infoen, lærte noget nyt",
+            "Synes det her var lidt overdrevet"
         };
 
         public static Article GenerateArticle(int id)
